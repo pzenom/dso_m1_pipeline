@@ -33,4 +33,4 @@ jobs:
             source venv/bin/activate
             docker build -t poc/$IMAGE_NAME:$TAG .
             echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
-            docker push myfirstpipeline/$IMAGE_NAME:$TAG
+            docker push dso_m1_pipeline/$IMAGE_NAME:$TAG
