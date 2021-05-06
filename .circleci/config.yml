@@ -32,6 +32,8 @@ jobs:
           command: |
             source venv/bin/activate
             docker build -t poc/$IMAGE_NAME:$TAG .
+            echo "PREV"
             echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
+            echo "POST"
       # docker push hudiga/myfirstpipeline:v001
       # docker push hudiga/$IMAGE_NAME:$TAG
