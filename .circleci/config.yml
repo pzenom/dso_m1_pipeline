@@ -35,6 +35,6 @@ jobs:
             echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
             echo "Preparando el push"
             #docker push hudiga/$IMAGE_NAME:$TAG
-            echo "Lo vuelvo a intentar"
+            docker images
             docker push hudiga/myfirstpipeline:v01
             
