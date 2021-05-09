@@ -1,15 +1,6 @@
 # Python CircleCI 2.0 configuration file
 version: 2
 jobs:
-  test:
-    # Test Step 1: obtenemos codigo fuente
-    docker:
-      - image: hudiga/$IMAGE_NAME:$TAG
-        auth:
-          username: $DOCKER_LOGIN
-          password: $DOCKER_PWD
-    parallelism: 4
-    
   build:
     docker:
       - image: circleci/python:3.7
