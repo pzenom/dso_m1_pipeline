@@ -1,4 +1,4 @@
-print "Bienvenido a Saludo con Ruby"
+print "Bienvenido a Saludo con Rubys"
 
 def saludo1()
     return "Hola"
